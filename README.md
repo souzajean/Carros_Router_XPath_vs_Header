@@ -58,9 +58,9 @@ Condição:
 
 ${header.ID} = '1'
 
-✔ Mais performática
-✔ Ideal para integrações complexas
-✔ Evita parsing XML repetido
+✔ Mais performática <br>
+✔ Ideal para integrações complexas <br>
+✔ Evita parsing XML repetido <br>
 
 🔵 Rota 2 — Baseada em XPath (XML)
 
@@ -68,12 +68,12 @@ Condição:
 
 /carros/carro/status = 'Disponível'
 
-✔ Direto no payload
-✔ Útil quando não há header
+✔ Direto no payload <br>
+✔ Útil quando não há header <br>
 
-⚠ Mais custosa (parse XML)
+⚠ Mais custosa (parse XML) <br>
 
-⚪ Rota Default
+⚪ Rota Default <br>
 
 Caso nenhuma condição seja atendida.
 
@@ -81,13 +81,13 @@ Caso nenhuma condição seja atendida.
 
 Cada rota retorna um XML diferente:
 
-🟢 Rota ID
+🟢 Rota ID <br>
 <resultado>
     <rota>ROTA Non-XML</rota>
     <tipo>Carro ID 1</tipo>
     <mensagem>Carro 1 está Reservado</mensagem>
 </resultado>
-🔵 Rota Status
+🔵 Rota Status <br>
 <resultado>
     <rota>ROTA XML</rota>
     <tipo>Carro ID 1</tipo>
@@ -116,18 +116,18 @@ Condição:
 
 ${header.ID} = '1'
 
-✔ Mais performática
-✔ Ideal para integrações complexas
-✔ Evita parsing XML repetido
+✔ Mais performática <br>
+✔ Ideal para integrações complexas <br>
+✔ Evita parsing XML repetido <br>
 
-🔵 Rota 2 — Baseada em XPath (XML)
+🔵 Rota 2 — Baseada em XPath (XML) <br>
 
 Condição:
 
 /carros/carro/status = 'Disponível'
 
-✔ Direto no payload
-✔ Útil quando não há header
+✔ Direto no payload <br>
+✔ Útil quando não há header <br>
 
 ⚠ Mais custosa (parse XML)
 
