@@ -82,22 +82,38 @@ Caso nenhuma condição seja atendida.
 Cada rota retorna um XML diferente:
 
 🟢 Rota ID <br>
+```
 <resultado>
     <rota>ROTA Non-XML</rota>
     <tipo>Carro ID 1</tipo>
     <mensagem>Carro 1 está Reservado</mensagem>
 </resultado>
+```
+
+<br> <br>
+
 🔵 Rota Status <br>
+```
 <resultado>
     <rota>ROTA XML</rota>
     <tipo>Carro ID 1</tipo>
     <mensagem>Carro 1 está Disponível</mensagem>
 </resultado>
+```
+
+<br>
+
 ⚪ Default
+```
 <resultado>
     <tipo>Outros</tipo>
     <mensagem>Rota padrão</mensagem>
-</resultado>2. 🧩 Content Modifier (CM_setHeader)
+</resultado>
+```
+
+<br>
+
+2. 🧩 Content Modifier (CM_setHeader)
 
 Extrai dados do XML e transforma em headers:
 
