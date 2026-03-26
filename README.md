@@ -9,6 +9,9 @@ O objetivo é mostrar, na prática, **diferenças de performance, uso e boas pr�
 Neste exemplo a integração recebe um XML com dados de carros e decide a rota com base no ID ou no status do veículo.
 
 
+![Fluxo](..imagens/capa-linkedin.png)
+
+
 ![Fluxo](imagens/capa-linkedin.png)
 
 ---
