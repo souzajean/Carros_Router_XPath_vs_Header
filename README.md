@@ -8,14 +8,7 @@
 O objetivo é mostrar, na prática, **diferenças de performance, uso e boas práticas** dentro de um iFlow real.
 Neste exemplo a integração recebe um XML com dados de carros e decide a rota com base no ID ou no status do veículo.
 
-<br>
-
-
 ![Fluxo](imagens/capa-linkedin.png)
-
-
-
-
 
 ---
 
