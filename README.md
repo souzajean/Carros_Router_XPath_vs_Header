@@ -14,6 +14,10 @@ Neste exemplo a integração recebe um XML com dados de carros e decide a rota c
 
 ![Fluxo](imagens/capa-linkedin.png)
 
+
+![Fluxo do iFlow](./imagens/capa-linkedin.png)
+
+
 ---
 
 
