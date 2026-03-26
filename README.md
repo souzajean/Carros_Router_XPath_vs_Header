@@ -28,6 +28,13 @@ Neste exemplo a integração recebe um XML com dados de carros e decide a rota c
 
 🔄 Fluxo da Integração
 
+
+![Fluxo](imagens/Screenshot_1.png)
+<br><br><br>
+
+
+
+
 # Entrada no Postman
 
 1. 📥 Entrada (Postman)
