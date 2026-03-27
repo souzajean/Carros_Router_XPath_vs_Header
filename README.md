@@ -17,8 +17,7 @@ Neste exemplo a integração recebe um XML com dados de carros e decide a rota c
 # 🔄 Fluxo da Integração
 
 
-![Fluxo](imagens/Screenshot_1.png)
-<br><br><br>
+
 
 
 
@@ -45,6 +44,9 @@ POST /carros
 2. 🧩 Content Modifier (CM_setHeader)
 
 Extrai dados do XML e transforma em headers:
+
+![Fluxo](imagens/Screenshot_1.png)
+<br><br><br>
 
 ID → /carros/carro/ID
 Status → /carros/carro/status
