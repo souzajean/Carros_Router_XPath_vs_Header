@@ -153,34 +153,6 @@ Condição:
 
 Caso nenhuma condição seja atendida.
 
-📤 Resposta por Rota
-
-Cada rota retorna um XML diferente:
-
-🟢 Rota ID
-```
-<resultado>
-    <rota>ROTA Non-XML</rota>
-    <tipo>Carro ID 1</tipo>
-    <mensagem>Carro 1 está Reservado</mensagem>
-</resultado>
-```
-🔵 Rota Status
-```
-<resultado>
-    <rota>ROTA XML</rota>
-    <tipo>Carro ID 1</tipo>
-    <mensagem>Carro 1 está Disponível</mensagem>
-</resultado>
-```
-
-⚪ Default
-```
-<resultado>
-    <tipo>Outros</tipo>
-    <mensagem>Rota padrão</mensagem>
-</resultado>
-```
 <br>
 
 ### Adicionando o Router
@@ -440,6 +412,48 @@ Resuldo esperado:
 </resultado>
 ```
 <br>
+
+
+## 📤 11. Resposta por Rota
+Cada rota retorna um XML diferente:
+
+### Non-XML
+![Fluxo](imagens/Screenshot_35.png)
+🟢 Rota ID
+```
+<resultado>
+    <rota>ROTA Non-XML</rota>
+    <tipo>Carro ID 1</tipo>
+    <mensagem>Carro 1 está Reservado</mensagem>
+</resultado>
+```
+
+### ROTA XML 
+![Fluxo](imagens/Screenshot_36.png)
+🔵 Rota Status
+```
+<resultado>
+    <rota>ROTA XML</rota>
+    <tipo>Carro ID 1</tipo>
+    <mensagem>Carro 1 está Disponível</mensagem>
+</resultado>
+```
+
+### Default
+![Fluxo](imagens/Screenshot_37.png)
+⚪ Default
+```
+<resultado>
+    <tipo>Outros</tipo>
+    <mensagem>Rota padrão</mensagem>
+</resultado>
+```
+<br>
+
+
+
+
+
 
 
 ---
