@@ -14,7 +14,10 @@ O objetivo é evidenciar diferenças de performance, cenários de uso e boas pr�
 ---
 
 🖼️ Visão Geral do Fluxo
+
 ![Fluxo](imagens/1.png)
+
+<br>
 
 # :building_construction: Arquitetura do iFlow
 
@@ -23,10 +26,11 @@ O objetivo é evidenciar diferenças de performance, cenários de uso e boas pr�
 # Entrada no Postman
 
 1. 📥 Entrada (Postman)
+Endpoint:
 ```
 POST /carros
 ```
-
+Payload de exemplo:
 ```
 <carros>
     <carro>
@@ -40,21 +44,22 @@ POST /carros
 ```
 <br>
 
-2. Criando o Pacote 
+## 📦 2. Criação do Pacote 
 
-## Criando o Pacote
+## Criando o Package
 ![Fluxo](imagens/Screenshot_1.png)
 
 <br>
 
-## Nome o Pacote
+## Nome do Package
 ![Fluxo](imagens/Screenshot_2.png)
 ```
 ZPKG_CPI_ROUTING_SCENARIOS
 ```
 <br>
 
-## Adicionando o Artefato
+## 🧩 3. Criação do Integration Flow
+Adicionando o Artefato
 ![Fluxo](imagens/Screenshot_3.png)
 
 <br>
