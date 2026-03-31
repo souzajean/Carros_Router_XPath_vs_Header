@@ -427,6 +427,9 @@ Cada rota retorna um XML diferente:
     <mensagem>Carro 1 está Reservado</mensagem>
 </resultado>
 ```
+<br>
+<br>
+<br>
 
 ### ROTA XML 
 ![Fluxo](imagens/Screenshot_36.png)
@@ -438,6 +441,9 @@ Cada rota retorna um XML diferente:
     <mensagem>Carro 1 está Disponível</mensagem>
 </resultado>
 ```
+<br>
+<br>
+<br>
 
 ### Default
 ![Fluxo](imagens/Screenshot_37.png)
@@ -449,12 +455,7 @@ Cada rota retorna um XML diferente:
 </resultado>
 ```
 <br>
-
-
-
-
-
-
+<br>
 
 ---
 
