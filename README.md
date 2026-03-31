@@ -187,7 +187,7 @@ Route ID
 
 <br>
 
-### Configurando a rota do Router 
+### Configurando a rota do Router ID 
 ![Fluxo](imagens/Screenshot_17.png)
 
 ```
@@ -198,128 +198,82 @@ Expression Type:	${header.ID} = '1'
 
 <br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Renomeando a rota do Router
+![Fluxo](imagens/Screenshot_18.png)
+
+```
+Route Status
+```
 
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+### Configurando a rota do Router Status
+![Fluxo](imagens/Screenshot_19.png)
+```
+Route Status
+Expression Type:	 XML
+Expression Type: 	/carros/carro/status ='Disponível'
+```
+
 <br>
 
+### Renomeando a rota do Router
+![Fluxo](imagens/Screenshot_20.png)
 
+```
+Route Default
+```
+<br>
 
+### Configurando a rota do Router Default
+![Fluxo](imagens/Screenshot_21.png)
 
+<br>
 
+### Configuração da rota do Router 
+![Fluxo](imagens/Screenshot_22.png)
 
+<br>
 
+## 🧩 8. Content Modifier (CM_setHeader)
 
+### Adicionando o Content Modifier
+![Fluxo](imagens/Screenshot_23.png)
 
+<br>
 
+## Renomeando o componente
+![Fluxo](imagens/Screenshot_24.png)
+```
+Name: CM_CarrosID
+```
 
+<br>
 
+### Configuração Header
+![Fluxo](imagens/Screenshot_25.png)
 
-5. 📤 Resposta por Rota
+```
+Message Header
+Name: CM_CarrosID
+Message Header - Create - Content-Type - Constant - application/xml
+```
+<br>
 
-Cada rota retorna um XML diferente:
+### Configuração Body
+![Fluxo](imagens/Screenshot_26.png)
+
+```
+Type: Expression
+Body: <resultado>
+    <rota>ROTA  Non-XML</rota>
+    <tipo>Carro ID ${header.ID}</tipo>
+    <mensagem>Carro ${header.ID} está ${header.Status}</mensagem>
+</resultado>
+```
+<br>
+
+Resuldo esperado:
 
 🟢 Rota ID <br>
 ```
@@ -329,6 +283,109 @@ Cada rota retorna um XML diferente:
     <mensagem>Carro 1 está Reservado</mensagem>
 </resultado>
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+/
+
 
 <br> <br>
 
@@ -353,14 +410,6 @@ Cada rota retorna um XML diferente:
 
 <br>
 
-2. 🧩 Content Modifier (CM_setHeader)
-
-Extrai dados do XML e transforma em headers:
-
-ID → /carros/carro/ID
-Status → /carros/carro/status
-
-👉 Isso permite usar lógica Non-XML no Router
 
 3. 🔀 Router (Decisão de Rota)
 
