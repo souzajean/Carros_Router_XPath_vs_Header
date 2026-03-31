@@ -235,7 +235,7 @@ Route Default
 
 <br>
 
-## 🧩 8. Content Modifier (CM_setHeader)
+## 🧩 8. Content Modifier (CM_CarrosID)
 
 ### Adicionando o Content Modifier
 ![Fluxo](imagens/Screenshot_23.png)
@@ -284,111 +284,47 @@ Resuldo esperado:
 </resultado>
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 
+## 🧩 8. Content Modifier (CM_CarrosStatus)
 
+### Adicionando o Content Modifier
+![Fluxo](imagens/Screenshot_27.png)
 
+<br>
 
+## Renomeando o componente
+![Fluxo](imagens/Screenshot_28.png)
+```
+Name: CM_CarrosStatus
+```
 
+<br>
 
+### Configuração Header
+![Fluxo](imagens/Screenshot_29.png)
 
+```
+Message Header
+Name: CM_CarrosStatus
+Message Header - Create - Content-Type - Constant - application/xml
+```
+<br>
 
+### Configuração Body
+![Fluxo](imagens/Screenshot_30.png)
 
+```
+Type: Expression
+Body: <resultado>
+    <rota>ROTA XML</rota>
+    <tipo>Carro ID ${header.ID}</tipo>
+    <mensagem>Carro ${header.ID} está ${header.Status}</mensagem>
+</resultado>
+```
+<br>
 
-
-
-
-/
-
-
-<br> <br>
-
+Resuldo esperado:
 🔵 Rota Status <br>
 ```
 <resultado>
@@ -399,6 +335,107 @@ Resuldo esperado:
 ```
 
 <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br> <br>
+
+
 
 ⚪ Default
 ```
