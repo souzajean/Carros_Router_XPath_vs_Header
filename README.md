@@ -126,7 +126,62 @@ Permite utilizar roteamento mais performático (Non-XML).
 
 ## 🔀 7. Router (Decisão de Rota)
 
-4. 🔀 Router (Decisão de Rota)
+O roteamento possui 3 caminhos:
+
+🟢 Rota 1 — Baseada em Header (Non-XML)
+
+Condição:
+
+${header.ID} = '1'
+
+✔ Mais performática <br>
+✔ Ideal para integrações complexas <br>
+✔ Evita parsing XML repetido <br>
+
+🔵 Rota 2 — Baseada em XPath (XML) <br>
+
+Condição:
+
+/carros/carro/status = 'Disponível'
+
+✔ Direto no payload <br>
+✔ Útil quando não há header <br>
+
+⚠ Mais custosa (parse XML)
+
+⚪ Rota Default
+
+Caso nenhuma condição seja atendida.
+
+4. 📤 Resposta por Rota
+
+Cada rota retorna um XML diferente:
+
+🟢 Rota ID
+```
+<resultado>
+    <rota>ROTA Non-XML</rota>
+    <tipo>Carro ID 1</tipo>
+    <mensagem>Carro 1 está Reservado</mensagem>
+</resultado>
+```
+🔵 Rota Status
+```
+<resultado>
+    <rota>ROTA XML</rota>
+    <tipo>Carro ID 1</tipo>
+    <mensagem>Carro 1 está Disponível</mensagem>
+</resultado>
+```
+
+⚪ Default
+```
+<resultado>
+    <tipo>Outros</tipo>
+    <mensagem>Rota padrão</mensagem>
+</resultado>
+```
+<br>
 
 ### Adicionando o Router
 ![Fluxo](imagens/Screenshot_11.png)
@@ -472,69 +527,7 @@ Resuldo esperado:
 
 3. 🔀 Router (Decisão de Rota)
 
-O roteamento possui 3 caminhos:
 
-🟢 Rota 1 — Baseada em Header (Non-XML)
-
-Condição:
-
-${header.ID} = '1'
-
-✔ Mais performática <br>
-✔ Ideal para integrações complexas <br>
-✔ Evita parsing XML repetido <br>
-
-🔵 Rota 2 — Baseada em XPath (XML) <br>
-
-Condição:
-
-/carros/carro/status = 'Disponível'
-
-✔ Direto no payload <br>
-✔ Útil quando não há header <br>
-
-⚠ Mais custosa (parse XML)
-
-⚪ Rota Default
-
-Caso nenhuma condição seja atendida.
-
-4. 📤 Resposta por Rota
-
-Cada rota retorna um XML diferente:
-
-🟢 Rota ID
-```
-<resultado>
-    <rota>ROTA Non-XML</rota>
-    <tipo>Carro ID 1</tipo>
-    <mensagem>Carro 1 está Reservado</mensagem>
-</resultado>
-```
-🔵 Rota Status
-```
-<resultado>
-    <rota>ROTA XML</rota>
-    <tipo>Carro ID 1</tipo>
-    <mensagem>Carro 1 está Disponível</mensagem>
-</resultado>
-```
-
-
-
-
-
-
-
-
-
-⚪ Default
-```
-<resultado>
-    <tipo>Outros</tipo>
-    <mensagem>Rota padrão</mensagem>
-</resultado>
-```
 
 
 ---
