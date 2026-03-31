@@ -5,12 +5,16 @@
 - 🔹 **Header (Non-XML)**
 - 🔹 **XPath (XML)**
 
-O objetivo é mostrar, na prática, **diferenças de performance, uso e boas práticas** dentro de um iFlow real.
-Neste exemplo a integração recebe um XML com dados de carros e decide a rota com base no ID ou no status do veículo.
+O objetivo é evidenciar diferenças de performance, cenários de uso e boas práticas dentro de um iFlow real.
+
+📌 Neste cenário, a integração recebe um XML com dados de veículos e decide a rota com base no ID ou no status do carro.
 
 ![Fluxo](imagens/capa-linkedin.png)
 
 ---
+
+🖼️ Visão Geral do Fluxo
+![Fluxo](imagens/1.png)
 
 # :building_construction: Arquitetura do iFlow
 
