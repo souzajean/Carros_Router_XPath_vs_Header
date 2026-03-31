@@ -16,12 +16,6 @@ Neste exemplo a integração recebe um XML com dados de carros e decide a rota c
 
 # 🔄 Fluxo da Integração
 
-
-
-
-
-
-
 # Entrada no Postman
 
 1. 📥 Entrada (Postman)
@@ -42,41 +36,68 @@ POST /carros
 ```
 <br>
 
-# Criando o Pacote
+2. Criando o Pacote 
+
+## Criando o Pacote
 ![Fluxo](imagens/Screenshot_1.png)
 
 <br>
 
-# Nome o Pacote
+## Nome o Pacote
 ![Fluxo](imagens/Screenshot_2.png)
 ```
 ZPKG_CPI_ROUTING_SCENARIOS
 ```
 <br>
 
-# Adicionando o Artefato
+## Adicionando o Artefato
 ![Fluxo](imagens/Screenshot_3.png)
 
 <br>
 
-# Nome do Integration Flow
+## Nome do Integration Flow
 ![Fluxo](imagens/Screenshot_4.png)
 ```
 IF_Carros_Router_XPath_vs_Header
 ```
 <br>
 
+## Editando o iFlow
+![Fluxo](imagens/Screenshot_5.png)
 
+<br>
+
+## Adicionando o Adapter HTTPS
+![Fluxo](imagens/Screenshot_6.png)
+
+<br>
+
+## HTTPS
+![Fluxo](imagens/Screenshot_7.png)
+```
+/carros
+```
+
+<br>
+
+## Adicionando o Content Modifier
+![Fluxo](imagens/Screenshot_8.png)
+
+<br>
+
+## Renomeamos o Content Modifier
+![Fluxo](imagens/Screenshot_9.png)
 Renomeamos o Content Modifier 
 ```
 General
-Name: cidade
+Name: CM_setHeader
 ```
-Em Property adicionamos
+
+Em Header adicionamos
 ```
-Exchange Property
-create   -   longitude   -   Constant   -   -46.62
-create   -   latitude   -    Constant   -    -23.68
+Message Header
+Create -	Status	-	XPath	-	/carros/carro/status	-	java.lang.String
+Create -	ID	   -	XPath	-   /carros/carro/ID	    -	java.lang.String
 ```
 
 <br>
