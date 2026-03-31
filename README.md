@@ -179,7 +179,24 @@ Caso nenhuma condição seja atendida.
 
 <br>
 
+### Renomeando a rota do Router
+![Fluxo](imagens/Screenshot_16.png)
+```
+Route ID
+```
 
+<br>
+
+### Configurando a rota do Router 
+![Fluxo](imagens/Screenshot_17.png)
+
+```
+Route ID
+Expression Type:	 Non-XML
+Expression Type:	${header.ID} = '1'
+```
+
+<br>
 
 
 
