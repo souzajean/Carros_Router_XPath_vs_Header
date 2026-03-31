@@ -296,7 +296,7 @@ Body: <resultado>
 ```
 <br>
 
-Resuldo esperado:
+Resultado esperado:
 
 🟢 Rota ID <br>
 ```
@@ -347,7 +347,7 @@ Body: <resultado>
 ```
 <br>
 
-Resuldo esperado:
+Resultado esperado:
 
 🔵 Rota Status <br>
 ```
@@ -398,7 +398,7 @@ Body: <resultado>
 ```
 <br>
 
-Resuldo esperado:
+Resultado  esperado:
 
 ⚪ Default
 ```
