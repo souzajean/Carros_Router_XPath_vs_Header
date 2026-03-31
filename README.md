@@ -286,7 +286,7 @@ Resuldo esperado:
 
 <br>
 
-## 🧩 8. Content Modifier (CM_CarrosStatus)
+## 🧩 9. Content Modifier (CM_CarrosStatus)
 
 ### Adicionando o Content Modifier
 ![Fluxo](imagens/Screenshot_27.png)
@@ -337,106 +337,45 @@ Resuldo esperado:
 
 <br>
 
+## 🧩 10. Content Modifier (CM_Default)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Adicionando o Content Modifier
+![Fluxo](imagens/Screenshot_31.png)
 
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+## Renomeando o componente
+![Fluxo](imagens/Screenshot_32.png)
+```
+Name: CM_Default
+```
 <br>
 
+<br>
 
+### Configuração Header
+![Fluxo](imagens/Screenshot_33.png)
 
+```
+Message Header
+Name: CM_CarrosStatus
+Message Header - Create - Content-Type - Constant - application/xml
+```
+<br>
 
+### Configuração Body
+![Fluxo](imagens/Screenshot_34.png)
 
+```
+Type: Constant
+Body: <resultado>
+    <tipo>Outros</tipo>
+    <mensagem>Rota padrão</mensagem>
+</resultado>
+```
+<br>
 
-
-
-
-
-
-
-
-
-
-<br> <br>
-
-
+Resuldo esperado:
 
 ⚪ Default
 ```
@@ -445,8 +384,90 @@ Resuldo esperado:
     <mensagem>Rota padrão</mensagem>
 </resultado>
 ```
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br> <br>
+
+
+
+
 
 
 3. 🔀 Router (Decisão de Rota)
@@ -498,6 +519,15 @@ Cada rota retorna um XML diferente:
     <mensagem>Carro 1 está Disponível</mensagem>
 </resultado>
 ```
+
+
+
+
+
+
+
+
+
 ⚪ Default
 ```
 <resultado>
