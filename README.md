@@ -46,12 +46,12 @@ Payload de exemplo:
 
 ## 📦 2. Criação do Pacote 
 
-## Criando o Package
+### Criando o Package
 ![Fluxo](imagens/Screenshot_1.png)
 
 <br>
 
-## Nome do Package
+### Nome do Package
 ![Fluxo](imagens/Screenshot_2.png)
 ```
 ZPKG_CPI_ROUTING_SCENARIOS
@@ -59,29 +59,35 @@ ZPKG_CPI_ROUTING_SCENARIOS
 <br>
 
 ## 🧩 3. Criação do Integration Flow
-Adicionando o Artefato
+
+### Adicionando o Artefato
 ![Fluxo](imagens/Screenshot_3.png)
 
 <br>
 
-## Nome do Integration Flow
+### Nome do iFlow
 ![Fluxo](imagens/Screenshot_4.png)
 ```
 IF_Carros_Router_XPath_vs_Header
 ```
 <br>
 
-## Editando o iFlow
+## ⚙️ 4. Configuração Inicial do iFlow
+
+### Editando o iFlow
+
 ![Fluxo](imagens/Screenshot_5.png)
 
 <br>
 
-## Adicionando o Adapter HTTPS
+## 🌐 5. Configuração do Adapter HTTPS
+
+### Adicionando o Adapter
 ![Fluxo](imagens/Screenshot_6.png)
 
 <br>
 
-## HTTPS
+### Endpoint configurado
 ![Fluxo](imagens/Screenshot_7.png)
 ```
 /carros
@@ -89,38 +95,43 @@ IF_Carros_Router_XPath_vs_Header
 
 <br>
 
+## 🧩 6. Content Modifier (Header Enrichment)
+
 ## Adicionando o Content Modifier
-3. 🧩 Content Modifier (CM_setHeader)
 ![Fluxo](imagens/Screenshot_8.png)
 
 <br>
 
-## Renomeamos o Content Modifier
+## Renomeando o componente
 ![Fluxo](imagens/Screenshot_9.png)
-Renomeamos o Content Modifier 
 ```
-General
 Name: CM_setHeader
 ```
+## 📌 Extração de dados do XML para Header
+
+Neste passo, extraímos informações do payload XML e transformamos em headers, permitindo roteamento sem necessidade de parsing XML no Router.
+
+### Configuração:
 ![Fluxo](imagens/Screenshot_10.png)
-Extrai dados do XML e transforma em headers
-Em Header adicionamos
+
 ```
 Message Header
 Create -	Status	-	XPath	-	/carros/carro/status	-	java.lang.String
 Create -	ID	   -	XPath	-   /carros/carro/ID	    -	java.lang.String
 ```
-👉 Isso permite usar lógica Non-XML no Router
+💡 Vantagem:
+Permite utilizar roteamento mais performático (Non-XML).
+
 <br>
 
-## Router
+## 🔀 7. Router (Decisão de Rota)
 
 4. 🔀 Router (Decisão de Rota)
 
-O roteamento possui 3 caminhos:
-
-## Adicionando o Router
+### Adicionando o Router
 ![Fluxo](imagens/Screenshot_11.png)
+
+
 
 
 
