@@ -13,10 +13,6 @@ O objetivo é evidenciar diferenças de performance, cenários de uso e boas pr�
 
 ---
 
-🖼️ Visão Geral do Fluxo
-
-![Fluxo](imagens/1.png)
-
 <br>
 
 # :building_construction: Arquitetura do iFlow
