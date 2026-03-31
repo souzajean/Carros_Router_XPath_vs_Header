@@ -153,7 +153,7 @@ Condição:
 
 Caso nenhuma condição seja atendida.
 
-4. 📤 Resposta por Rota
+📤 Resposta por Rota
 
 Cada rota retorna um XML diferente:
 
