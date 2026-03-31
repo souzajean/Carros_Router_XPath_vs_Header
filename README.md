@@ -42,7 +42,31 @@ POST /carros
 ```
 <br>
 
-![Fluxo](imagens/Screenshot_7.png)
+# Criando o Pacote
+![Fluxo](imagens/Screenshot_1.png)
+
+<br>
+
+# Nome o Pacote
+![Fluxo](imagens/Screenshot_2.png)
+```
+ZPKG_CPI_ROUTING_SCENARIOS
+```
+<br>
+
+# Adicionando o Artefato
+![Fluxo](imagens/Screenshot_3.png)
+
+<br>
+
+# Nome do Integration Flow
+![Fluxo](imagens/Screenshot_4.png)
+```
+IF_Carros_Router_XPath_vs_Header
+```
+<br>
+
+
 Renomeamos o Content Modifier 
 ```
 General
