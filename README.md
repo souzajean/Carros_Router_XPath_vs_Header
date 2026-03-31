@@ -81,6 +81,7 @@ IF_Carros_Router_XPath_vs_Header
 <br>
 
 ## Adicionando o Content Modifier
+3. 🧩 Content Modifier (CM_setHeader)
 ![Fluxo](imagens/Screenshot_8.png)
 
 <br>
@@ -92,131 +93,126 @@ Renomeamos o Content Modifier
 General
 Name: CM_setHeader
 ```
-
+![Fluxo](imagens/Screenshot_10.png)
+Extrai dados do XML e transforma em headers
 Em Header adicionamos
 ```
 Message Header
 Create -	Status	-	XPath	-	/carros/carro/status	-	java.lang.String
 Create -	ID	   -	XPath	-   /carros/carro/ID	    -	java.lang.String
 ```
-
-<br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
-2. 🧩 Content Modifier (CM_setHeader)
-
-Extrai dados do XML e transforma em headers:
-
-![Fluxo](imagens/Screenshot_1.png)
-<br><br><br>
-
-ID → /carros/carro/ID
-Status → /carros/carro/status
-
 👉 Isso permite usar lógica Non-XML no Router
+<br>
 
-3. 🔀 Router (Decisão de Rota)
+## Router
+
+4. 🔀 Router (Decisão de Rota)
 
 O roteamento possui 3 caminhos:
+
+## Adicionando o Router
+![Fluxo](imagens/Screenshot_11.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
 
 🟢 Rota 1 — Baseada em Header (Non-XML)
 
@@ -243,7 +239,7 @@ Condição:
 
 Caso nenhuma condição seja atendida.
 
-4. 📤 Resposta por Rota
+5. 📤 Resposta por Rota
 
 Cada rota retorna um XML diferente:
 
